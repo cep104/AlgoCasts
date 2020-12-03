@@ -12,4 +12,4 @@ function anagrams(stringA, stringB) {}
 
 module.exports = anagrams;
 
-let hello = "hello"
+
