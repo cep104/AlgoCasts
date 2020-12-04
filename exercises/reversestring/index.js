@@ -37,18 +37,24 @@
 //once it is done return the new string 
 //making function 
 function reverse(str){
+    
     if(str === ""){
         
      return str 
     }else{
-        
+        // debugger;
      return reverse(str.substr(1)) + str[0]
+     
     }
    }
    //substr cuts off the string at the index you put
    //first time return bcd + a (bcda)
    //second time return cd + b (cdba)
    //third time return d  (dcba)
-
+   //fourth time return "" so returns the new string dcba
+reverse('abcd')
 module.exports = reverse;
 // #finished
+// node inspect.js 
+// c to get to debugger
+//repl
