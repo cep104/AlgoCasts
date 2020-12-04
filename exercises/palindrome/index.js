@@ -6,7 +6,20 @@
 // --- Examples:
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
+// my solution
 
-function palindrome(str) {}
+// function palindrome(str) {
+//     return str.split("").reverse().join("") === str 
+//    }
 
+function palindrome(str){
+  return str.split('').every((char, i)=>{
+    //   debugger;
+        return char === str[str.length - i -1];
+        //first time char = a, i = 0 str.length 
+        //i to make sure it goes through the entire function -1 because arrays start at 0 so minus one from the array. 
+    })
+}
+//every used to do a boolean check on every element in an array 
+palindrome('abba')
 module.exports = palindrome;
