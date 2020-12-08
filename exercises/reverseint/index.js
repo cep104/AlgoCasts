@@ -8,6 +8,22 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-function reverseInt(n) {}
+// My first solution:
+function reverseInt(n) {
+   //first we want to take the number turn it into a string and turn it into an array
+   const numberArray =  n.toString().split("")
+   //if the arrays first part is a - 
+    if(numberArray[0] === "-"){
+        //take the first element of the array and add it to the rest of the elements in the array reversed. then turn the whole thing into a integer
+       return parseInt(numberArray[0] + numberArray.slice(1).reverse().join(""))
+    }else{
+        //reverse array and turn it into a n integer parseInt gets rid of zeros before so 005 would just be 5
+       return parseInt(numberArray.reverse().join(""))
+    }
+}
+
+// function reverseInt(n){
+
+// }
 
 module.exports = reverseInt;

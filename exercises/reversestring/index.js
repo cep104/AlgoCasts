@@ -52,7 +52,7 @@ function reverse(str){
    //second time return cd + b (cdba)
    //third time return d  (dcba)
    //fourth time return "" so returns the new string dcba
-reverse('abcd')
+// reverse('abcd') have to add manual function call to use debugger
 module.exports = reverse;
 // #finished
 // node inspect.js 
