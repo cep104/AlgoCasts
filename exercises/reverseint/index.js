@@ -22,7 +22,17 @@ function reverseInt(n) {
     }
 }
 
+
+// SOLUTION from walk through
 // function reverseInt(n){
+//  const reversed = n
+//  .toString()
+//  .split('')
+//  .reverse()
+//  .join(''); 
+// return parseInt(reversed) * Math.sign(n)
+// //Math.sign works by turning to a -1 if negative and a positive 1 if positive 
+// //so -50 = -1 and 50 = 1
 
 // }
 
